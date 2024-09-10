@@ -5,7 +5,9 @@ const mongoose = require('mongoose')
 const methodOverride = require('method-override')
 const app = express()
 
-mongoose.connect('mongodb://localhost/bharatInternDatabase')
+
+const DATABASE_URL = "mongodb+srv://mayank601665:mayank601665@cluster0.dxrbe.mongodb.net/blog-website?retryWrites=true&w=majority&appName=Cluster0";
+mongoose.connect(DATABASE_URL,{ useNewUrlParser: true, useUnifiedTopology: true });
 app.set("views", "./view")
 app.set('view engine', 'ejs')
 app.use(express.urlencoded({extended: false}))
