@@ -1,7 +1,7 @@
 {
   "name": "blog_website",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "blogwebsite": "nodemon server.js",
     "start": "node server.js"
